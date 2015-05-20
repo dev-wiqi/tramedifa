@@ -1,0 +1,165 @@
+
+/*-------------------------------------------------*/
+/* =  Navigation
+/*-------------------------------------------------*/
+
+/* Navigation  */
+.nav-wrap {
+  float: right;
+}
+
+#nav {
+  float: right;
+  position: relative;
+  margin-right: 5px;
+}
+
+#nav > select {
+  display: none;
+}
+
+ul#navlist {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+
+}
+
+ul#navlist li {
+  float: left;
+  position: relative;
+
+}
+
+ul#navlist li a {
+  display: block;
+  font-size: 17px; /* 17px */
+  font-weight: normal;
+  line-height: normal;
+  color: #000000;
+  padding: 12px 18px;
+  font-family: 'Oswald', sans-serif;
+   padding-top: 40px;
+   text-transform: uppercase;
+}
+
+ul#navlist li.current > a,
+ul#navlist li > a:hover{
+  color: #CD08A4;
+  background: #CD08A4;
+}
+
+ul#navlist li a:hover, ul#navlist li.current {
+  color: #fff;
+
+  }
+  
+ ul#navlist li a > :hover:after, ul#navlist li.current:after {
+	content:"";
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 5px solid #CD08A4;
+	position:absolute;
+	left:50%;
+	margin-left:-10px;
+	bottom:-5px;
+
+	}
+	
+
+	
+
+
+/* DropDown Menu = Superfish */
+.sf-menu {
+  line-height: 1.0;
+  overflow: visible !important;
+}
+
+.sf-menu .sub-menu {
+  position: absolute;
+  top: -999em;
+  width: 183px; /* left offset of submenus need to match (see below) */
+  margin: 0 !important;
+  padding-left: 0;
+  padding-top: 27px;
+}
+
+.sf-menu ul li {
+  width: 100%;
+}
+
+.sf-menu li:hover {
+  visibility: inherit; /* fixes IE7 'sticky bug' */
+}
+
+.sf-menu li {
+  float: left;
+  position: relative;
+}
+
+.sf-menu a {
+  display: block;
+  position: relative;
+}
+
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+  left: 0;
+  top: auto; /* match top ul list item height */
+  z-index: 99;
+}
+
+.sf-menu li:hover li ul,
+.sf-menu li.sfHover li ul {
+  top: -999em;
+}
+
+.sf-menu li li:hover ul,
+.sf-menu li li.sfHover ul {
+  left: 100%; /* match ul width */
+  top: 0;
+}
+
+.sf-menu li li:hover li ul,
+.sf-menu li li.sfHover li ul {
+  top: -999em;
+}
+
+.sf-menu li li li:hover ul,
+.sf-menu li li li.sfHover ul {
+  left: 100%; /* match ul width */
+  top: 0;
+}
+
+.sf-menu .sub-menu {
+  overflow: visible !important;
+}
+
+.sf-menu .sub-menu li {
+  background: #CD08A4;
+  padding-right: 0;
+  list-style: none;
+  border-bottom: 1px solid #AC0288;
+}
+
+
+.sf-menu .sub-menu li:hover a{
+  color: #000 !important;
+  background: #F86EDB !important;
+}
+
+
+.sf-menu .sub-menu a {
+  font-size: 12px !important;
+  font-weight: normal;
+  color: #fff !important;
+  padding: 12px 15px !important;
+  line-height: normal;
+  font-family: 'Open Sans' !important;
+}
+
+  .sub-menu span {
+      display: none;
+    }
+
